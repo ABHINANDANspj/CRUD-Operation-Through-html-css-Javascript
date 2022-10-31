@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required!</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Roll Number</label>
+                        <input type="text" name="Rollnumber" id="Rollnumber">
+                    </div>
+                    <div>
+                        <label>Branch</label>
+                        <input type="text" name="Branch" id="Branch">
+                    </div>
+                    <div>
+                        <label>G-mail</label>
+                        <input type="text" name="gmail" id="gmail">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Rollnumber</th>
+                            <th>Branch</th>
+                            <th>gmail</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
